@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+    <h1>@ViewBag.Description</h1>
+
+    <ul>
+        @foreach (var Character in ViewBag.Characters)
+        {
+            <li>@Character</li>
+        }
+
+    </ul>
+    </div>
+</body>
+</html>
